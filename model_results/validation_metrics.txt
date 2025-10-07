@@ -1,0 +1,23 @@
+Classification Report:
+                precision    recall  f1-score   support
+
+     CANDIDATE       0.80      0.53      0.63      1699
+     CONFIRMED       0.99      0.43      0.60      1149
+FALSE POSITIVE       0.48      0.95      0.64      1266
+
+      accuracy                           0.63      4114
+     macro avg       0.76      0.64      0.62      4114
+  weighted avg       0.76      0.63      0.63      4114
+
+
+Confusion Matrix (rows=true, cols=predicted):
+[[ 892    4  803]
+ [ 156  497  496]
+ [  66    0 1200]]
+
+Regression MSE per target:
+koi_prad: MSE=9365745.297773, RMSE=3060.350519
+Distance_AU: MSE=0.526854, RMSE=0.725847
+Water_Prob: MSE=0.078790, RMSE=0.280695
+Atmosphere_Prob: MSE=0.213159, RMSE=0.461692
+Habitability_Prob: MSE=0.075599, RMSE=0.274952
