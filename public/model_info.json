@@ -1,0 +1,33 @@
+{
+  "name": "Physics-Enhanced Exoplanet Classifier",
+  "version": "1.0",
+  "type": "multi-output",
+  "training": {
+    "total_epochs": 38,
+    "final_validation_accuracy": 0.9067570567131042,
+    "final_validation_loss": 0.2239622771739959,
+    "final_regression_mse": 0.3583273589611053,
+    "final_regression_mae": 0.2183539122343063
+  },
+  "outputs": [
+    {
+      "name": "classification",
+      "type": "probability",
+      "description": "Probability that the transit is caused by an exoplanet"
+    },
+    {
+      "name": "regression",
+      "type": "continuous",
+      "description": "Estimated orbital/physical parameters"
+    }
+  ],
+  "features": {
+    "physics_constraints": true,
+    "multi_mission": [
+      "Kepler",
+      "TESS"
+    ],
+    "light_curve_processing": true,
+    "physics_validation": true
+  }
+}
